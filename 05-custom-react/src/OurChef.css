@@ -1,0 +1,47 @@
+/** @format */
+.chef__container {
+  height: 85vh;
+  background-color: #fff5e0;
+  color: #fa7070;
+}
+.chef__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.chef__top > p {
+  width: 60%;
+  text-align: center;
+}
+
+.chef__card__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.chef__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chef__card > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+.chef__card > h3 {
+  font-size: 26px;
+  margin-top: 5%;
+}
+.chef__card > p {
+  font-size: 20px;
+  margin-top: 0%;
+}
+.chef__card > img:hover {
+  transform: scale(1.2);
+}
