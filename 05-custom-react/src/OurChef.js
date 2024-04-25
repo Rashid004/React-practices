@@ -28,7 +28,7 @@ function OurChef() {
             src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
             alt="user img"
           />
-          <h3>Munni lali</h3>
+          <h3>Marine Lender</h3>
           <p>Co-Founder</p>
         </div>
         <div className="chef__card">

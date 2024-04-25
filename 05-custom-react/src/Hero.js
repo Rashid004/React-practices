@@ -11,31 +11,11 @@ function Hero() {
             </div>
             <div className="hero_nav_list">
               <ul>
-                <li>
-                  <a href="#" className="hero_nav_link hero_link">
-                    HOME
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hero_nav_link">
-                    PRODUCT
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hero_nav_link">
-                    PROMO
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hero_nav_link">
-                    ABOUT
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hero_nav_link">
-                    CONTACT
-                  </a>
-                </li>
+                <li className="hero_nav_link hero_link">HOME</li>
+                <li className="hero_nav_link hero_link">PRODUCT</li>
+                <li className="hero_nav_link hero_link">PROMO</li>
+                <li className="hero_nav_link hero_link">ABOUT</li>
+                <li className="hero_nav_link hero_link">CONTACT</li>
               </ul>
             </div>
           </nav>

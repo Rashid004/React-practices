@@ -1,13 +1,13 @@
 /** @format */
 
 .order__section {
+  height: 75vh;
+  padding-top: 25px;
+  background-color: #ff5757;
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding-top: 25px;
-  height: 80vh;
-  background-color: #ff5757;
-  color: #fff;
 }
 .order__section > img {
   width: 400px;
@@ -34,12 +34,15 @@
 .order__info > button {
   display: inline-block;
   font-size: 20px;
-  background-color: #fff;
-  padding: 8px 36px;
-  color: #fa7070;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.3s;
   font-weight: 600;
+  background-color: #fff;
+  color: #fa7070;
+  padding: 8px 36px;
+  border-radius: 50px;
   border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.order__info > button:hover {
+  background-color: #ffffffd9;
 }

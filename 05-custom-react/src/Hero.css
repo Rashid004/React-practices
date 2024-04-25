@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-.hero_nav_list > ul > li > a {
+.hero_nav_list > ul > li {
   text-decoration: none;
   color: #fff;
   /* padding: 0 10px; */
