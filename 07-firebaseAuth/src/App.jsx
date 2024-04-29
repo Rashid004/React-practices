@@ -1,20 +1,26 @@
 /** @format */
 
 import { useState } from "react";
-import { app } from "./firebaseConfige";
+import { app, database } from "./firebaseConfige";
+// import {
+//   getAuth,
+//   // signInWithEmailAndPassword,
+//   // createUserWithEmailAndPassword,
+//   // GoogleAuthProvider,
+//   // signInWithPopup,
+// } from "firebase/auth";
 import {
-  getAuth,
-  signInWithEmailAndPassword,
-  // createUserWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
-
+  collection,
+  addDoc,
+  getDocs,
+  updateDoc,
+  doc,
+} from "firebase/firestore";
 function App() {
   const [data, setData] = useState({});
-  const auth = getAuth(app);
+  // const auth = getAuth(app);
 
-  const googleProvider = new GoogleAuthProvider();
+  const collectionRef = collection(database, "users");
 
   function handleInput(event) {
     let inputData = { [event.target.name]: event.target.value };
@@ -22,14 +28,33 @@ function App() {
   }
 
   const handleSubmit = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((response) => {
-        console.log("User signed up:", response.user);
-      })
-      .catch((error) => {
-        console.error("Error signing up:", error.message);
-        // Add logic to display error message to the user
-      });
+    addDoc(collectionRef, {
+      email: data.email,
+      password: data.password,
+    })
+      .then(() => alert("Data added"))
+      .catch((err) => alert(err.message));
+  };
+
+  const getData = () => {
+    getDocs(collectionRef).then((res) =>
+      console.log(
+        res.docs.map((item) => {
+          return { ...item.data(), id: item.id };
+        })
+      )
+    );
+  };
+
+  const updateData = () => {
+    const docToUpdate = doc(database, "users", "rfqp9lYaOUozL9v4sDvp");
+
+    updateDoc(docToUpdate, {
+      email: "anas@gmail.com",
+      password: 11111,
+    })
+      .then(() => alert("Data Updated"))
+      .catch((err) => alert(err.message));
   };
 
   return (
