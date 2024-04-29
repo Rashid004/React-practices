@@ -1,20 +1,11 @@
 /** @format */
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./components/Home/Home";
-import Layout from "./components/Layout/Layout";
+// /** @format */
+
+import "./index.css";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<Home />} />
-        <Route path="contact" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <></>;
 }
 
 export default App;
