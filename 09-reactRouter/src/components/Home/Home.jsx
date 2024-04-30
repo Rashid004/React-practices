@@ -10,7 +10,12 @@ export default function Home() {
           <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
             <h2 className="text-4xl font-bold sm:text-5xl">
               Download Now
-              <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
+              <span className="hidden sm:block font-medium text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Commodi suscipit, aperiam quia esse labore at non neque quam
+                illum dolores corrupti, sequi libero ex vitae quasi quaerat
+                nulla magnam totam.
+              </span>
             </h2>
 
             <Link
@@ -49,8 +54,11 @@ export default function Home() {
         />
       </div>
 
-      <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-        Lorem Ipsum Yojo
+      <h1 className="text-center text-lg sm:text-3xl py-10 font-medium">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nobis
+        similique fuga? Accusamus voluptatibus molestiae quae unde aliquid, ad
+        dignissimos laboriosam, saepe asperiores dolor fuga maiores nulla ea
+        natus culpa.
       </h1>
     </div>
   );

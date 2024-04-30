@@ -23,12 +23,18 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <Link to="/" className="hover:underline">
+                  <Link
+                    to="/"
+                    className="hover:underline hover:text-orange-600"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:underline">
+                  <Link
+                    to="/about"
+                    className="hover:underline hover:text-orange-600"
+                  >
                     About
                   </Link>
                 </li>
@@ -41,8 +47,8 @@ export default function Footer() {
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/hiteshchoudhary"
-                    className="hover:underline"
+                    href="https://github.com/Rashid004"
+                    className="hover:underline hover:text-orange-600"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -50,7 +56,10 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline">
+                  <Link
+                    to="/"
+                    className="hover:underline hover:text-orange-600"
+                  >
                     Discord
                   </Link>
                 </li>
@@ -62,12 +71,18 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <Link to="#" className="hover:underline">
+                  <Link
+                    to="#"
+                    className="hover:underline hover:text-orange-600"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="hover:underline">
+                  <Link
+                    to="#"
+                    className="hover:underline hover:text-orange-600"
+                  >
                     Terms &amp; Conditions
                   </Link>
                 </li>
@@ -79,8 +94,11 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
             © 2023
-            <a href="https://hiteshchoudhary.com/" className="hover:underline">
-              hiteshchoudhary
+            <a
+              href="https://hiteshchoudhary.com/"
+              className="hover:underline hover:text-orange-600"
+            >
+              Ansari Rashid
             </a>
             . All Rights Reserved.
           </span>
@@ -113,7 +131,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-gray-500 ">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
