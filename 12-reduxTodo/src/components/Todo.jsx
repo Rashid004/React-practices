@@ -1,7 +1,7 @@
 /** @format */
 
 import { useDispatch, useSelector } from "react-redux";
-import { removeTodo, updateTodo } from "../features/todo/TodoSlice";
+import { removeTodo } from "../features/todo/TodoSlice";
 
 function Todos() {
   const todos = useSelector((state) => state.todos);
@@ -9,7 +9,9 @@ function Todos() {
 
   return (
     <>
-      <div>Todo</div>
+      <div className="bg-slate-600 inline-block mt-[10px] text-white text-2xl p-[8px] rounded-[5px] hover:bg-slate-700 transition-colors animate-pulse duration-150 accent-slate-800">
+        Your Todos 📝
+      </div>
       <ul className="list-none">
         {todos.map((todo) => (
           <li
@@ -17,24 +19,7 @@ function Todos() {
             key={todo.id}
           >
             <div className="text-white">{todo.text}</div>
-            <button
-              onClick={() => dispatch(updateTodo(todo.id))}
-              className="text-white bg-red-500 rounded py-1 px-4 focus:outline-none hover:bg-red-600 text-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                class="w-6 h-6"
-              >
-                <path d="M12 19l7-7-7-7-7 7 7 7z" />
-                <path d="M12 19V5" />
-              </svg>
-            </button>
+
             <button
               onClick={() => dispatch(removeTodo(todo.id))}
               className="text-white bg-red-500 rounded py-1 px-4 focus:outline-none hover:bg-red-600 text-md"
