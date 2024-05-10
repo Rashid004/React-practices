@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { app, database } from "./firebaseConfige";
-// import {
-//   getAuth,
-//   // signInWithEmailAndPassword,
-//   // createUserWithEmailAndPassword,
-//   // GoogleAuthProvider,
-//   // signInWithPopup,
-// } from "firebase/auth";
+import {
+  getAuth,
+  // signInWithEmailAndPassword,
+  // createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
 import {
   collection,
   addDoc,
